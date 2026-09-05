@@ -5,11 +5,7 @@ export function Skills() {
   return (
     <section id="skills" className="px-6 py-20 sm:px-8 sm:py-24">
       <div className="mx-auto max-w-3xl">
-        <SectionHeader
-          eyebrow="Skills"
-          title="Tools & techniques"
-          description="The stack I reach for most, and the craft behind it."
-        />
+        <SectionHeader eyebrow="Skills" title="Skills" />
         <div className="grid gap-6 sm:grid-cols-2">
           {skillGroups.map((group) => (
             <div

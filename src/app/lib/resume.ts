@@ -1,17 +1,16 @@
 export type ExperienceItem = {
   role: string;
-  company: string;
+  organization: string;
   period: string;
   location: string;
   highlights: string[];
 };
 
-export type ProjectItem = {
-  name: string;
-  description: string;
-  tags: string[];
-  highlights?: string[];
-  href?: string;
+export type EducationItem = {
+  institution: string;
+  degree: string;
+  period: string;
+  location: string;
 };
 
 export type SkillGroup = {
@@ -20,117 +19,106 @@ export type SkillGroup = {
 };
 
 export const profile = {
-  name: "Lily Grellner",
-  title: "Senior Frontend Engineer",
-  tagline:
-    "I build fast, accessible interfaces that people love using — and teams love maintaining.",
-  location: "Seattle, WA",
-  email: "lily.grellner@example.com",
-  phone: "+1 (206) 555-0142",
-  availability: "Open to select opportunities",
-  socials: [
-    { label: "GitHub", href: "https://github.com/lilygrellner" },
-    { label: "LinkedIn", href: "https://www.linkedin.com/in/lilygrellner" },
-    { label: "Email", href: "mailto:lily.grellner@example.com" },
-  ],
+  name: "Jiali (Lily) Grellner",
+  title: "Data Analyst & MPA",
+  location: "Oklahoma City, OK",
+  email: "jxing@uco.edu",
 };
 
-export const navLinks = [
-  { label: "About", href: "#about" },
-  { label: "Experience", href: "#experience" },
-  { label: "Skills", href: "#skills" },
-  { label: "Projects", href: "#projects" },
-  { label: "Contact", href: "#contact" },
-];
-
-export const aboutParagraphs = [
-  "I'm a frontend engineer with eight years of experience turning ambitious product ideas into dependable, fast web applications. I care about the details: motion that explains, layouts that hold up on any screen, and code that reads like a conversation.",
-  "Most recently I've focused on design systems and developer experience — building the shared primitives that let a small team ship like a large one. I enjoy mentoring other engineers and pairing with designers to close the gap between spec and shipped UI.",
-  "When I'm not at a keyboard you'll find me trail running around the Pacific Northwest, or at the farmers market with way too many tomatoes.",
+export const summary = [
+  "MPA degree from University of Central Oklahoma. Bachelors and Masters degrees in Public Administration from Zhejiang Normal University.",
+  "Substantial work experience in data analysis, office administration, teaching, research, marketing, and advertising. Founder and manager of a tutoring center.",
+  "Enthusiastic and conscientious. Excellent communication and people skills.",
 ];
 
 export const experience: ExperienceItem[] = [
   {
-    role: "Senior Frontend Engineer",
-    company: "Atlas Commerce",
-    period: "2022 — Present",
-    location: "Seattle, WA",
+    role: "Data Analyst",
+    organization: "Oklahoma State Department of Education",
+    period: "Oct 2022 – Present",
+    location: "",
+    highlights: [],
+  },
+  {
+    role: "Legal Secretary",
+    organization: "Oklahoma Tax Commission",
+    period: "Oct 2019 – Oct 2022",
+    location: "",
     highlights: [
-      "Led a redesign of the checkout flow that lifted conversion by 18% and cut server render time 40%.",
-      "Built the internal design system consumed by 12 teams, reducing time-to-ship for new pages by half.",
-      "Mentored four engineers through first code review, promotion, and on-call ownership.",
+      "Drafted legal documents",
+      "Assisted with the daily needs of the attorneys",
+      "Communicated effectively with team members and taxpayers",
     ],
   },
   {
-    role: "Frontend Engineer",
-    company: "Harbor Analytics",
-    period: "2019 — 2022",
-    location: "Portland, OR",
-    highlights: [
-      "Shipped a real-time dashboard for 40k daily users with sub-second filtering across millions of rows.",
-      "Introduced server-side rendering and code-splitting, improving time-to-interactive by 60%.",
-      "Drove accessibility adoption: WCAG 2.1 AA compliance across the product and a keyboard-first mobile app.",
-    ],
+    role: "Tax Document Examiner",
+    organization: "Oklahoma Tax Commission",
+    period: "Jun 2018 – Oct 2019",
+    location: "",
+    highlights: [],
   },
   {
-    role: "Frontend Engineer",
-    company: "Brightline Studio",
-    period: "2017 — 2019",
-    location: "San Francisco, CA",
-    highlights: [
-      "Built and launched 20+ marketing and product sites for startup clients on React and Next.js.",
-      "Created a reusable component library that became the studio's default client build.",
-      "Automated visual regression testing, cutting release-blocking UI regressions by 70%.",
-    ],
+    role: "Research Assistant",
+    organization: "University of Central Oklahoma",
+    period: "May 2016 – Feb 2017",
+    location: "",
+    highlights: [],
+  },
+  {
+    role: "Founder, Manager, and Teacher",
+    organization: "Yingzhifu Tutoring Center — Jinhua, China",
+    period: "Jan 2010 – Aug 2015",
+    location: "",
+    highlights: [],
   },
 ];
 
 export const skillGroups: SkillGroup[] = [
   {
-    label: "Languages",
-    skills: ["TypeScript", "JavaScript", "HTML", "CSS", "GraphQL"],
+    label: "Programming Languages",
+    skills: ["C++", "Java"],
   },
   {
-    label: "Frontend",
-    skills: ["React", "Next.js", "Tailwind CSS", "Redux", "Vite"],
+    label: "Professional",
+    skills: [
+      "Data analysis",
+      "Research and teaching",
+      "Effective training ability",
+      "Engaging public speaker",
+      "Quick learner",
+      "Works effectively in teams",
+      "Bilingual: English, Chinese",
+    ],
   },
   {
-    label: "Tooling & Testing",
-    skills: ["Vitest", "Playwright", "Storybook", "GitHub Actions", "npm"],
-  },
-  {
-    label: "Design & Experience",
-    skills: ["Accessibility", "Design Systems", "Figma", "Motion"],
+    label: "Office Tools",
+    skills: ["Word", "Excel", "PowerPoint", "Access"],
   },
 ];
 
-export const projects: ProjectItem[] = [
+export const education: EducationItem[] = [
   {
-    name: "Kite Design System",
-    description:
-      "An open-source React design system with 40+ accessible components, dark mode, and a live playground.",
-    tags: ["React", "TypeScript", "Storybook"],
-    highlights: ["1.2k GitHub stars", "Used across 12 internal teams"],
-    href: "https://github.com/lilygrellner/kite",
+    institution: "Oklahoma City Community College",
+    degree: "Computer Science",
+    period: "Jun 2021 – Dec 2022",
+    location: "Oklahoma City, OK",
   },
   {
-    name: "trailhead",
-    description:
-      "A tiny serverless app for logging trail runs and charting progress with simple, honest visuals.",
-    tags: ["Next.js", "Tailwind CSS", "Postgres"],
-    href: "https://github.com/lilygrellner/trailhead",
+    institution: "University of Central Oklahoma",
+    degree: "Master of Public Administration",
+    period: "Dec 2015",
+    location: "Edmond, OK",
   },
   {
-    name: "Wavestats",
-    description:
-      "WebGL audio visualizer that renders microphone input into flowing waveforms in the browser.",
-    tags: ["TypeScript", "WebGL", "Canvas"],
+    institution: "Zhejiang Normal University",
+    degree: "Master of Administration (Public Administration)",
+    period: "Jun 2015",
+    location: "Jinhua, Zhejiang, China",
   },
   {
-    name: "Snack-case",
-    description:
-      "A tiny utility library for converting between case styles — typed, tested, and dependency-free.",
-    tags: ["TypeScript", "Vitest"],
-    href: "https://www.npmjs.com/package/snack-case",
+    institution: "Zhejiang Normal University",
+    degree: "Bachelor of Administration (Public Administration)",
+    period: "Jun 2012",
+    location: "Jinhua, Zhejiang, China",
   },
 ];

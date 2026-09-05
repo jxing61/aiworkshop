@@ -14,28 +14,28 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Lily Grellner — Senior Frontend Engineer",
-    template: "%s · Lily Grellner",
+    default: "Jiali (Lily) Grellner — Data Analyst & MPA",
+    template: "%s · Jiali (Lily) Grellner",
   },
   description:
-    "Portfolio and resume of Lily Grellner, a senior frontend engineer building fast, accessible web interfaces with React, TypeScript, and Next.js.",
-  authors: [{ name: "Lily Grellner" }],
-  metadataBase: new URL("https://lilygrellner.example.com"),
-  openGraph: {
-    title: "Lily Grellner — Senior Frontend Engineer",
-    description:
-      "Portfolio and resume of Lily Grellner, a senior frontend engineer.",
-    type: "website",
-    locale: "en_US",
-  },
+    "Resume of Jiali (Lily) Grellner, a data analyst and public administration professional based in Oklahoma City, OK.",
+  authors: [{ name: "Jiali (Lily) Grellner" }],
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html
       lang="en"
+      suppressHydrationWarning
       className={`${geistSans.variable} ${geistMono.variable} antialiased`}
     >
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){try{var t=localStorage.getItem("theme");if(!t)t=window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";if(t==="dark")document.documentElement.classList.add("dark");}catch(e){}})();`,
+          }}
+        />
+      </head>
       <body className="min-h-dvh bg-background text-foreground">
         {children}
       </body>

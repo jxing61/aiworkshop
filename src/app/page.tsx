@@ -1,9 +1,8 @@
 import { Nav, Hero } from "@/app/components/hero";
-import { About } from "@/app/components/about";
+import { Summary } from "@/app/components/about";
 import { Experience } from "@/app/components/experience";
 import { Skills } from "@/app/components/skills";
-import { Projects } from "@/app/components/projects";
-import { Contact } from "@/app/components/contact";
+import { Education } from "@/app/components/education";
 import { Footer } from "@/app/components/footer";
 
 export default function Home() {
@@ -12,11 +11,10 @@ export default function Home() {
       <Nav />
       <main className="flex-1">
         <Hero />
-        <About />
+        <Summary />
         <Experience />
         <Skills />
-        <Projects />
-        <Contact />
+        <Education />
       </main>
       <Footer />
     </div>
