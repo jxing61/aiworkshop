@@ -2,7 +2,7 @@
 
 A single-page personal resume website for **Jiali (Lily) Grellner**, built from her resume and deployed publicly on Vercel.
 
-**Live URL:** *pending Vercel deployment — see notes below*
+**Live URL:** https://temporary-express-glacier-0bxlihp.vercel.app *(temporary — expires ~60 min; claim the deployment below for a persistent URL)*
 
 **Repo:** https://github.com/jxing61/aiworkshop
 
@@ -49,8 +49,9 @@ Open [http://localhost:3000](http://localhost:3000). The page auto-updates as yo
 
 ## Deployment notes
 
-The repository is public and push-ready. A Vercel deployment was **not** created during the workshop run because no Vercel authentication token is available in the environment — connecting Vercel requires an interactive `vercel login` (device authorization) or a `VERCEL_TOKEN`. Connect this GitHub repo to Vercel to enable push-triggered builds:
+The repository is public and the site builds clean with `npm run build` (0 type errors, lint clean). A temporary Vercel deployment is live at the URL above and was created headlessly with the Vercel CLI. It expires after 60 minutes.
 
-1. Import `github.com/jxing61/aiworkshop` at https://vercel.com/new
-2. Framework preset: Next.js (defaults apply)
-3. Deploy — the repo builds clean with `npm run build` and no type/lint errors
+To keep the site on a **persistent** public URL, claim the temporary deployment or connect the repo:
+
+1. **Claim the existing deployment** (fastest): visit https://vercel.com/claim-deployment?code=c4c1bd03-10de-4b28-9c53-80ab0806a3b2 and sign in.
+2. Or import `github.com/jxing61/aiworkshop` at https://vercel.com/new (framework preset: Next.js, defaults apply).
